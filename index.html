@@ -7,12 +7,20 @@
 <a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false;">
     <a-assets>
         <a-asset-item id="momijimodoki" src="models/momijimodoki.gltf"></a-asset-item>
+        <a-asset-item id="sc_manju" src="models/sc_manju.gltf"></a-asset-item>
     </a-assets>
     <a-marker type="pattern" url="data/pattern_dog.patt">
         <a-entity   position="0 0 0" 
                     rotation="0 0 0"
-                    scale="0.10 0.10 0.10"
+                    scale="0.5 0.5 0.5"
                     gltf-model="#momijimodoki" >
+        </a-entity>
+    </a-marker>
+    <a-marker type="pattern" url="data/pattern_mochi.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="0 0 0"
+                    scale="0.5 0.5 0.5"
+                    gltf-model="#sc_manju" >
         </a-entity>
     </a-marker>
     <a-entity camera></a-entity>
